@@ -20,3 +20,31 @@ console.log("hello " + myName);
 myName = "nicolas";
 
 console.log("your name is "+ myName);
+
+const amIfat = true;
+//boolean ture ,false
+
+let something;
+//undefiend
+
+const nothing = null;
+//null
+
+const mon = "mon";
+const tue = "tue";
+const wed = "wed";
+const thu = "thu";
+const fri = "fri";
+const sat = "sat";
+const sun = "sund";
+
+//const daysOfWeek = mon + tue + wed + thu+ fri + sat + sun;
+const daysOfWeek = [mon , tue , wed , thu, fri , sat];
+
+// Get Item from Array
+console.log(daysOfWeek);
+
+// Add one more day to the arry
+daysOfWeek.push(sun);
+
+console.log(daysOfWeek);
