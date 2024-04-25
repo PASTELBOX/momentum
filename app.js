@@ -20,18 +20,29 @@
 
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
+const greeting = document.querySelector("#greeting");
 
-const link = document.querySelector("a");
+const HIDDEN_CLASSNAME = "hidden";
 
-function onLoginSubmit(tomato) {
+//const link = document.querySelector("a");
+
+function onLoginSubmit(event) {
     // const username = loginInput.value;
-    tomato.preventDefault();
-    console.log(tomato);
+    event.preventDefault();
+    //console.log(loginInput.value);
+    const username = loginInput.value;
+    loginForm.classList.add("hidden");
+    console.log(username);
+    //greeting.innerText = "Hello "+username;
+    greeting.innerText = `Hello ${username}`;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-function handleLinkClick(){
-    alert("clicked!");
-}
+// function handleLinkClick(event){
+//     event.preventDefault();
+//     console.dir(event);
+//     //alert("clicked!");
+// }
 
 loginForm.addEventListener("submit",onLoginSubmit);
-link.addEventListener("click",handleLinkClick);
+//link.addEventListener("click",handleLinkClick);
