@@ -175,8 +175,45 @@
 // player.sayHello("lynn");
 // player.sayHello("nico");
 
-//Recap
-const a = 5;
-let isNicoFat = true;
+//Return
+// const age = 96;
+// function calculateKrAge(ageOfForeigner){
+//     return ageOfForeigner + 2;
+//     //return "hello";
+// }
 
-isNicoFat = false;
+// const krAge = calculateKrAge(age);
+
+// console.log(krAge);
+
+//Conditionals part one
+// const age = parseInt(prompt("How old are you?"));
+
+// console.log(age);
+// console.log(typeof age);
+// console.log(typeof "15", typeof parseInt("15"));
+// console.log(age, parseInt(age));
+
+//Conditionals part two
+// console.log(isNaN(age));
+
+// if(isNaN(age)) {
+//     console.log("Please write a number")
+// } else {
+//     console.log("Thank you for writing your age.")
+// }
+
+//Conditionals part three
+// if(isNaN(age) || age < 0) {
+//     console.log("Please write a real positive number");
+// } else if(age < 18) {
+//     console.log("You are too young.");
+// } else if(age >= 18 && age <= 50) {
+//     console.log("You can drink");
+// } else if(age > 50 && age <= 80) {
+//     console.log("You should exercise");
+// } else if(age === 100) {
+//     console.log("wow you are wise");
+// } else if( age > 80) {
+//     console.log("You can do whatever you want.");
+// }
